@@ -230,3 +230,9 @@ body {
     }
 
 }
+
+.hobby-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
