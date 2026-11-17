@@ -115,3 +115,58 @@ main {
         min-height: 180px;
     }
 }
+
+
+/* 활동 통계 영역 */
+.activity-section {
+    margin-top: 60px;
+}
+
+.activity-section > h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #9A9FAB;
+    margin-bottom: 20px;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.activity-card {
+    background-color: #1C1F26;
+    border: 1px solid #292C33;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.activity-card h3 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.activity-card p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.activity-card span {
+    font-size: 12px;
+    color: #8D929E;
+}
+
+/* 모바일 대응 */
+@media (max-width: 650px) {
+
+    .activity-section {
+        margin-top: 45px;
+    }
+
+    .activity-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+}
