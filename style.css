@@ -1,0 +1,117 @@
+
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111318;
+    color: #F1F2F4;
+    font-family: Arial, sans-serif;
+}
+
+/* 상단 메뉴 */
+header {
+    padding: 25px 8%;
+    border-bottom: 1px solid #292C33;
+}
+
+header h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* 메인 영역 */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 8%;
+}
+
+/* 소개 영역 */
+.intro {
+    margin-bottom: 45px;
+}
+
+.intro p:first-child {
+    color: #8D929E;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.intro p:last-child {
+    color: #9A9FAB;
+}
+
+/* 취미 카드 */
+.hobby-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.hobby-card {
+    min-height: 230px;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+}
+
+.hiking {
+    background-color: #263D35;
+}
+
+.playstation {
+    background-color: #30334D;
+}
+
+.hobby-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hobby-card p {
+    color: #CDD0D8;
+}
+
+/* 모바일 대응 */
+@media (max-width: 650px) {
+
+    header {
+        padding: 20px;
+    }
+
+    main {
+        padding: 45px 20px;
+    }
+
+    .intro h2 {
+        font-size: 28px;
+    }
+
+    .hobby-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .hobby-card {
+        min-height: 180px;
+    }
+}
